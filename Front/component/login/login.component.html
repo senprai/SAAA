@@ -1,0 +1,81 @@
+<mat-toolbar color="primary">
+  <span>
+    <img src="../../assets/img/logo.png" style="padding-left:2vh;" width="100" height="30">
+  </span>
+
+  <span class="fill-remaining-space"></span>
+  <button mat-button>Home</button>
+  <button mat-button>Reservation</button>
+  
+  </mat-toolbar>
+<div class="signin-content">
+  <mat-card>
+    <h3 style="font-size:30px;">Login </h3>
+
+    <mat-card-content>
+      <mat-form-field class="full-width-input">
+        <input matInput placeholder="Username" [(ngModel)]="usernameLogin">
+      </mat-form-field>
+      <mat-form-field class="full-width-input">
+        <input matInput type="password" placeholder="Password" [(ngModel)]="passwordLogin">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+
+    </mat-card-content>
+    
+      <a [routerLink]="['/register']">Open an account.</a>
+    
+    
+
+  </mat-card>
+</div>
+
+<!--<body>
+  <mat-toolbar class="main-navigation-bar container">
+    <mat-toolbar-row>
+      <img src="../../assets/img/logo.png" width="100" height="30">
+      <ul style="width: 90%;">
+        <li><a [routerLink]="['/regis']" id="register"><i style="color: rgb(0, 248, 248);" class="	fa fa-edit">Register</i></a></li>
+        <li><a [routerLink]="['/Log']" id="login"><i style="color: rgb(0, 248, 248);" class="fa fa-address-book-o">Login</i></a></li>
+        <li><a href="#" id="about">About</a></li>
+        <li><a href="#" id="contact">Contact</a></li>
+        <li><a href="#" id="news">News</a></li>
+        <li><a href="#" id="home">Home</a></li>
+      </ul>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="grid-container">
+
+    <div class="grid-item" style="grid-column:3/span 1;">
+      <br>
+      <br>
+      <h1>Login</h1>
+    </div>
+    <div class="grid-item" style="grid-column:1/span 5;">
+      <hr style="width:80%;">
+    </div>
+
+    <div class="grid-item" style="grid-column:2/span 1;"><label for="Username">Username:</label></div>
+    <div class="grid-item" style="grid-column:2/span 3;"><i class="fa fa-user icon"></i><input type="Username" class="form-control"
+        id="Username"></div>
+
+    <div class="grid-item" style="grid-column:2/span 1;"><label for="pwd">Password:</label></div>
+    <div class="grid-item" style="grid-column:2/span 3;"><i class="fa fa-key icon"></i><input type="password" class="form-control"
+        id="pwd"></div>
+
+    <div class="grid-item" style="grid-column:2/span 1;">
+      <mat-checkbox>Remember me</mat-checkbox>
+    </div>
+
+    <div class="grid-item" style="grid-column:1/span 5;">
+      <hr style="width:80%;">
+    </div>
+
+    <div class="grid-item" style="grid-column:2/span 3;"><button mat-button [routerLink]="['/profile']">Login</button></div>
+
+    <div class="grid-item" style="grid-column:2/span 1;">
+      or <a [routerLink]="['/regis']">open an account.</a>
+    </div>
+  
+  </div>
+</body>-->

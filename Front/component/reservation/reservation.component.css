@@ -1,0 +1,52 @@
+mat-card{
+  width: 70%;
+  margin: auto auto;
+}
+
+.centerbox{
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/*
+.main-navigation-bar{
+  background: transparent;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.main-navigation-bar :hover{    background: #343A40;}
+li {    float:right;}
+li,a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;    
+}
+
+body{
+  width: 100%;
+}
+
+
+.bg-main{
+  background: linear-gradient(270deg,#4da18c, #8866a3, #62c3a6);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 25s ease infinite;
+  -moz-animation: AnimationName 25s ease infinite;
+  animation: AnimationName 25s ease infinite;
+}
+
+
+.GG{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+
+*/

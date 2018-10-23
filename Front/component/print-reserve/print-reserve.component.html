@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<mat-toolbar style="background-color: rgb(89, 58, 175);">
+    <span>
+        <img src="/assets/img/logo.png" style="padding-left:2vh;" width="100" height="30">
+    </span>
+
+    <span class="fill-remaining-space"></span>
+    <button mat-button [routerLink]="['/home']">Home</button>
+    <button mat-button [routerLink]="['/reservation']">Reservation</button>
+    <button mat-button [routerLink]="['/user-profile']">Profile</button>
+    <button mat-button (click)="logout()">Logout</button>
+
+</mat-toolbar>
+
+<body>
+    <br>
+    <div>
+        <div align="center" style="margin-top: 20px">
+            <img src="/assets/img/Printer.png" width="100" height="100">
+        </div>
+        <h1 style="font-size: 56px; text-align: center; margin-top:-3px;color: #17A05D;">Print-RESERVE</h1>
+        <p style="font-size: 20px; text-align: center; margin-top:-40px;color: #FFF;">
+            การแลกเปลี่ยนสกุลเงินได้ง่ายๆ โดยการนัดหมายนี้จะทำให้คุณสะดวกมากยิ่งขึ้น</p>
+
+    </div>
+ 
+    <mat-card>
+        <div class="container" id="reservePrint">
+            <mat-card-content>
+                <p class="text-center" style="font-size: 22px; color: #000000; text-align: center;">ใบนัดหมายการแลกเปลี่ยนสกุลเงิน</p>
+                <hr>
+                <div class="box2col">
+                    <div class="b left" align="left">
+                        <img src="/assets/img/logo2.png" width="100" height="30">
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000;">
+                            ติดต่อเรา www.ExRichExchange.com</p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000;">
+                            ศูนย์บริการ {{serviceCenShow}}</p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000;">
+                            ที่อยู่ศูนย์บริการ {{serviceAddressShow}}</p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000;">
+                            โทร {{serviceTelShow}}</p>
+                    </div>
+
+                    <div class="b right" align="center">
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000">
+                            <b>รายละเอียด</b></p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000">
+                            วันที่ออกใบนัดหมาย : {{dateOutShow}}</p>
+
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000">
+                            เลขที่ใบนัดหมาย : {{idQueueShow}}</p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000">
+                            ชื่อ-สกุล : {{nameMemberShow}}</p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000">
+                            อีเมลล์ : {{emailUserShow}}</p>
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #000000">
+                            วันนัดหมายจองคิว : <b>{{dateAppointmentShow}}</b></p>
+                    </div>
+                </div>
+
+                <table align="center" style="width:80%;">
+                    <tr>
+                        <th>จำนวนเงินที่นำมาแลกเปลี่ยน</th>
+                        <td>{{baseAmountShow}} {{baseCurrencyShow}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>สกุลเงินที่ต้องการแลกเปลี่ยน</th>
+                        <td>{{distCurrencyShow}}</td>
+                    </tr>
+                </table>
+
+                <div class="box2col">
+                    <div class="b emtry"></div>
+                    <div class="b instruction">
+                        <p class="text-center" style="font-size: 18px; text-align: left; color: #a11919">
+                            *คำแนะนำสำหรับบริษัท*</p>
+                        <p class="text-center" style="font-size: 16px; text-align: left; color: #000000; margin-top: -10px;">
+                            โปรดตรวจสอบวันที่ท่านนัดหมายจองคิวในฉบับนี้ หากเกินกำหนดวันที่ท่านนัดหมาย
+                            ขอแนะนำให้ท่านทำการเข้าเว็บไซต์
+                            www.ExRichExchange.com เพื่อพิมพ์ใบนัดหมายการแลกเปลี่ยนสกุลเงินฉบับใหม่</p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </div>
+    </mat-card>
+</body>
+
+<mat-card-actions>
+    <div class="centerbox" style="margin-top: 15px">
+        <button mat-raised-button class="GG" color="primary" style="width: 150px; margin-right: 15px; background-color: tomato"
+            [routerLink]="['/reservation']">PREVIOUS</button>
+        <button mat-raised-button class="GG" color="primary" (click)="printReservation('reservePrint')" style="width: 150px; margin-left: 15px; background-color:slateblue">PRINT</button>
+    </div>
+</mat-card-actions>

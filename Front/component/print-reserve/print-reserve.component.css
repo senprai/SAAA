@@ -1,0 +1,107 @@
+mat-card{
+  width: 60%;
+  margin: auto auto;
+}
+
+.centerbox{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box2col {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+.b {
+  padding: 20px;
+  font-size: 150%;
+}
+
+#text-sh-d{
+  text-shadow: 2px 2px 5px #D6D0CE;
+}
+
+#text-sh-w{
+  text-shadow: 2px 2px 5px #283747;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #c0c0c0;
+  text-align: left;
+  background-color: #ebe9e9;
+  font-size: 16px;
+  padding: 22px;
+}
+
+th{
+  border: 1px solid #c0c0c0;
+  text-align: left;
+  background-color: #e2e2e2;
+  font-size: 18px;
+  padding: 22px;
+}
+
+
+/*
+
+
+
+.box2col {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+.b {
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+.boxxx {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  color: #FFFFD8;
+}
+.box {
+  background-color: #FFFFD8;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+table {
+
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  font-size: 20px;
+  border: 1px solid #bdbbbb;
+  text-align: center;
+  padding: 8px;
+}
+td {
+  font-size: 17px;
+  border: 1px solid #bdbbbb;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #dad5d5;
+}
+
+
+
+*/

@@ -1,0 +1,115 @@
+mat-card {
+
+  max-width: 30%;
+  margin: auto auto;
+  text-align: center;
+ 
+}
+.signin-content {
+  padding: 20vh 1rem ;
+}
+.full-width-input {
+  width: 100%;
+}
+
+/*.main-navigation-bar{
+  background-color: transparent;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.main-navigation-bar :hover{ background:#343A40;}
+li {    float:right;}
+li,a[id = name],a[id = about],a[id = contact],a[id = news],a[id = home],a[id = branch],a[id = login],a[id = register] {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;    
+}
+
+  body{
+  background: linear-gradient(270deg, #37c5a0, #c58a37);
+  background-size: 400% 400%;
+
+  min-height: 105vh;
+  height: 100%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 10px;    
+    font-size: 20px;
+  }    
+    input[type = Username],input[type = password]{
+      width: 80%;
+      padding: 16px;               
+      margin: 1px 0 1px 0;           
+      border: none;                    
+      background: #f1f1f1;          
+    }
+    input[type=Username]:focus, input[type= password]:focus {
+      background-color: rgb(146, 230, 255);      
+      outline: none;                               
+    }
+    .icon{
+      width: 5%;
+      padding: 15px;
+      background: dodgerblue;
+      color: white;
+      min-width: 40px;
+      text-align: center;
+    }
+  
+    button{
+      height:50px ;
+      background-color: rgb(13, 107, 230);     
+      color: white;
+      padding: 16px 25px;
+      margin: 8px 0;
+      border: none;    
+      width: 90%;
+      font-size: 25px;
+     
+    }
+    button:hover {opacity: 1}
+    button :active{
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+       
+       
+      }
+    .orfrom{
+      padding: 10px;   
+      margin: 20px 0 1px 0;
+      
+    }
+    a {
+      color:aqua;
+    }
+  
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}*/
